@@ -9,7 +9,7 @@ El objetivo principal fue verificar que las respuestas de la API fueran consiste
 ## Documentación del proyecto
 
 **Casos de prueba y resultados:**  
-[Ver archivo Excel](https://docs.google.com/spreadsheets/d/1y1EAxKcr-H80Bli7dLdzvIX_2-gLsCul/edit?usp=sharing&ouid=106691349693826056792&rtpof=true&sd=true)
+[Casos de prueba y resultados](https://docs.google.com/spreadsheets/d/1y1EAxKcr-H80Bli7dLdzvIX_2-gLsCul/edit?usp=sharing&ouid=106691349693826056792&rtpof=true&sd=true)
 
 
 ## Objetivo del proyecto
