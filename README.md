@@ -1,4 +1,4 @@
-# API & Database Testing | Urban Grocers
+# Database Testing & API Testing | Urban Grocers
 
 Proyecto de **QA Engineering** enfocado en la validación de la persistencia de datos en la base de datos de **Urban Grocers** a partir de las operaciones realizadas mediante la API.
 
