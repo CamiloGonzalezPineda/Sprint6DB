@@ -1,0 +1,339 @@
+{
+  "info": {
+    "_postman_id": "188b80a1-69da-4742-8ab0-86982a5b14fb",
+    "name": "Casos de prueba UG-1",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "56261245",
+    "_collection_link": "https://go.postman.co/collection/56261245-188b80a1-69da-4742-8ab0-86982a5b14fb?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Crear Paquete de Despensa",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"groceryBundleName\": \"Paquete de prueba\",\n  \"groceryCollectionId\": 1\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url-base}}/api/v1/grocery-bundles",
+          "host": [
+            "{{url-base}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "grocery-bundles"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Agregar Productos",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"productsList\": [\n    {\n      \"productId\": 3,\n      \"quantity\": 1\n    }\n  ]\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url-base}}/api/v1/grocery-bundles/8/products",
+          "host": [
+            "{{url-base}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "grocery-bundles",
+            "8",
+            "products"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Crear 31 Productos con iDs, Unicos",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"productsList\": [\n    {\n      \"productId\": 1,\n      \"quantity\": 2\n    },\n    {\n      \"productId\": 2,\n      \"quantity\": 2\n    },\n    {\n      \"productId\": 3,\n      \"quantity\": 1\n    },\n    {\n      \"productId\": 4,\n      \"quantity\": 100\n    },\n    {\n      \"productId\": 5,\n      \"quantity\": 100\n    },\n    {\n      \"productId\": 6,\n      \"quantity\": 2\n    },\n    {\n      \"productId\": 7,\n      \"quantity\": 1\n    },\n    {\n      \"productId\": 8,\n      \"quantity\": 5\n    },\n    {\n      \"productId\": 9,\n      \"quantity\": 10\n    },\n    {\n      \"productId\": 10,\n      \"quantity\": 20\n    },\n    {\n      \"productId\": 11,\n      \"quantity\": 2\n    },\n    {\n      \"productId\": 12,\n      \"quantity\": 3\n    },\n    {\n      \"productId\": 13,\n      \"quantity\": 5\n    },\n    {\n      \"productId\": 14,\n      \"quantity\": 10\n    },\n    {\n      \"productId\": 15,\n      \"quantity\": 15\n    },\n    {\n      \"productId\": 16,\n      \"quantity\": 20\n    },\n    {\n      \"productId\": 17,\n      \"quantity\": 25\n    },\n    {\n      \"productId\": 18,\n      \"quantity\": 30\n    },\n    {\n      \"productId\": 19,\n      \"quantity\": 50\n    },\n    {\n      \"productId\": 20,\n      \"quantity\": 100\n    },\n    {\n      \"productId\": 21,\n      \"quantity\": 2\n    },\n    {\n      \"productId\": 22,\n      \"quantity\": 3\n    },\n    {\n      \"productId\": 23,\n      \"quantity\": 5\n    },\n    {\n      \"productId\": 24,\n      \"quantity\": 10\n    },\n    {\n      \"productId\": 25,\n      \"quantity\": 15\n    },\n    {\n      \"productId\": 26,\n      \"quantity\": 20\n    },\n    {\n      \"productId\": 27,\n      \"quantity\": 25\n    },\n    {\n      \"productId\": 28,\n      \"quantity\": 30\n    },\n    {\n      \"productId\": 29,\n      \"quantity\": 50\n    },\n    {\n      \"productId\": 30,\n      \"quantity\": 75\n    },\n    {\n      \"productId\": 31,\n      \"quantity\": 100\n    }\n  ]\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url-base}}/api/v1/grocery-bundles/7/products",
+          "host": [
+            "{{url-base}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "grocery-bundles",
+            "7",
+            "products"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Ids, producto no existente",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"productsList\": [\n    {\n      \"productId\": 200,\n      \"quantity\": 1\n    }\n  ]\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url-base}}/api/v1/grocery-bundles/9/products",
+          "host": [
+            "{{url-base}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "grocery-bundles",
+            "9",
+            "products"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Agregar un producto existente a un paquete que no existe",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"productsList\": [\n    {\n      \"productId\": 3,\n      \"quantity\": 1\n    }\n  ]\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url-base}}/api/v1/grocery-bundles/20/products",
+          "host": [
+            "{{url-base}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "grocery-bundles",
+            "20",
+            "products"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Estructura Invalida",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"productsList\": \"productos\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url-base}}/api/v1/grocery-bundles/13/products",
+          "host": [
+            "{{url-base}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "grocery-bundles",
+            "13",
+            "products"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Agregar 30 Productos",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"productsList\": [\n    {\n      \"productId\": 1,\n      \"quantity\": 2\n    },\n    {\n      \"productId\": 2,\n      \"quantity\": 2\n    },\n    {\n      \"productId\": 3,\n      \"quantity\": 1\n    },\n    {\n      \"productId\": 4,\n      \"quantity\": 100\n    },\n    {\n      \"productId\": 5,\n      \"quantity\": 100\n    },\n    {\n      \"productId\": 6,\n      \"quantity\": 2\n    },\n    {\n      \"productId\": 7,\n      \"quantity\": 1\n    },\n    {\n      \"productId\": 8,\n      \"quantity\": 5\n    },\n    {\n      \"productId\": 9,\n      \"quantity\": 10\n    },\n    {\n      \"productId\": 10,\n      \"quantity\": 20\n    },\n    {\n      \"productId\": 11,\n      \"quantity\": 2\n    },\n    {\n      \"productId\": 12,\n      \"quantity\": 3\n    },\n    {\n      \"productId\": 13,\n      \"quantity\": 5\n    },\n    {\n      \"productId\": 14,\n      \"quantity\": 10\n    },\n    {\n      \"productId\": 15,\n      \"quantity\": 15\n    },\n    {\n      \"productId\": 16,\n      \"quantity\": 20\n    },\n    {\n      \"productId\": 17,\n      \"quantity\": 25\n    },\n    {\n      \"productId\": 18,\n      \"quantity\": 30\n    },\n    {\n      \"productId\": 19,\n      \"quantity\": 50\n    },\n    {\n      \"productId\": 20,\n      \"quantity\": 100\n    },\n    {\n      \"productId\": 21,\n      \"quantity\": 2\n    },\n    {\n      \"productId\": 22,\n      \"quantity\": 3\n    },\n    {\n      \"productId\": 23,\n      \"quantity\": 5\n    },\n    {\n      \"productId\": 24,\n      \"quantity\": 10\n    },\n    {\n      \"productId\": 25,\n      \"quantity\": 15\n    },\n    {\n      \"productId\": 26,\n      \"quantity\": 20\n    },\n    {\n      \"productId\": 27,\n      \"quantity\": 25\n    },\n    {\n      \"productId\": 28,\n      \"quantity\": 30\n    },\n    {\n      \"productId\": 29,\n      \"quantity\": 50\n    },\n    {\n      \"productId\": 30,\n      \"quantity\": 75\n    }\n  ]\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url-base}}/api/v1/grocery-bundles/25/products",
+          "host": [
+            "{{url-base}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "grocery-bundles",
+            "25",
+            "products"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Producto con cantidad cero",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"productsList\": [\n    {\n      \"productId\": 3,\n      \"quantity\": 0\n    }\n  ]\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url-base}}/api/v1/grocery-bundles/29/products",
+          "host": [
+            "{{url-base}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "grocery-bundles",
+            "29",
+            "products"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Agregar Producto sin cantidad",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"productsList\": [\n    {\n      \"productId\": 3\n     \n    }\n  ]\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url-base}}/api/v1/grocery-bundles/32/products",
+          "host": [
+            "{{url-base}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "grocery-bundles",
+            "32",
+            "products"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Agregar Producto sin ProductId",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"productsList\": [\n    {\n      \"quantity\": 1\n    }\n  ]\n}\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url-base}}/api/v1/grocery-bundles/36/products",
+          "host": [
+            "{{url-base}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "grocery-bundles",
+            "36",
+            "products"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Agregar 29 productos",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"productsList\": [\n    { \"productId\": 1, \"quantity\": 1 },\n    { \"productId\": 2, \"quantity\": 1 },\n    { \"productId\": 3, \"quantity\": 1 },\n    { \"productId\": 4, \"quantity\": 1 },\n    { \"productId\": 5, \"quantity\": 1 },\n    { \"productId\": 6, \"quantity\": 1 },\n    { \"productId\": 7, \"quantity\": 1 },\n    { \"productId\": 8, \"quantity\": 1 },\n    { \"productId\": 9, \"quantity\": 1 },\n    { \"productId\": 10, \"quantity\": 1 },\n    { \"productId\": 11, \"quantity\": 1 },\n    { \"productId\": 12, \"quantity\": 1 },\n    { \"productId\": 13, \"quantity\": 1 },\n    { \"productId\": 14, \"quantity\": 1 },\n    { \"productId\": 15, \"quantity\": 1 },\n    { \"productId\": 16, \"quantity\": 1 },\n    { \"productId\": 17, \"quantity\": 1 },\n    { \"productId\": 18, \"quantity\": 1 },\n    { \"productId\": 19, \"quantity\": 1 },\n    { \"productId\": 20, \"quantity\": 1 },\n    { \"productId\": 21, \"quantity\": 1 },\n    { \"productId\": 22, \"quantity\": 1 },\n    { \"productId\": 23, \"quantity\": 1 },\n    { \"productId\": 24, \"quantity\": 1 },\n    { \"productId\": 25, \"quantity\": 1 },\n    { \"productId\": 26, \"quantity\": 1 },\n    { \"productId\": 27, \"quantity\": 1 },\n    { \"productId\": 28, \"quantity\": 1 },\n    { \"productId\": 29, \"quantity\": 1 }\n  ]\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url-base}}/api/v1/grocery-bundles/8/products",
+          "host": [
+            "{{url-base}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "grocery-bundles",
+            "8",
+            "products"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
