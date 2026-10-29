@@ -1,4 +1,4 @@
-# Sprint 6 — API & Database Testing | Urban Grocers
+# API & Database Testing | Urban Grocers
 
 Proyecto de **QA Engineering** enfocado en la validación de la persistencia de datos en la base de datos de **Urban Grocers** a partir de las operaciones realizadas mediante la API.
 
@@ -62,13 +62,13 @@ Se validaron escenarios positivos, negativos y de límites:
 | Caso | Escenario | Resultado |
 |---|---|---|
 | UG-1-TC-01 | Agregar producto válido | Detectada inconsistencia API/BD |
-| UG-1-TC-02 | Intentar agregar 31 productos | ✅ Correcto |
-| UG-1-TC-03 | Agregar `productId` inexistente | 🐛 Bug detectado |
-| UG-1-TC-04 | Agregar producto a bundle inexistente | ✅ Correcto |
-| UG-1-TC-05 | Enviar `productsList` con estructura inválida | 🐛 Bug detectado |
+| UG-1-TC-02 | Intentar agregar 31 productos | Correcto |
+| UG-1-TC-03 | Agregar `productId` inexistente | Bug detectado |
+| UG-1-TC-04 | Agregar producto a bundle inexistente | Correcto |
+| UG-1-TC-05 | Enviar `productsList` con estructura inválida | Bug detectado |
 | UG-1-TC-06 | Agregar exactamente 30 productos | Detectada inconsistencia API/BD |
-| UG-1-TC-07 | Enviar `quantity = 0` | 🐛 Bug detectado |
-| UG-1-TC-08 | Omitir `quantity` | 🐛 Bug detectado |
+| UG-1-TC-07 | Enviar `quantity = 0` | Bug detectado |
+| UG-1-TC-08 | Omitir `quantity` | Bug detectado |
 | UG-1-TC-09 | Agregar 29 productos | Detectada inconsistencia API/BD |
 
 ---
